@@ -1,0 +1,32 @@
+html{
+    font-size:62.5%;
+}
+body{
+    font:normal 100% Arial,sans-serif;
+    font-size:14px;
+}
+.left{
+    width:30%;
+    float:left
+}
+.right{
+    width:70%;
+    float:right
+}
+
+#outside{
+    width:350px;
+    height:350px;
+    margin:auto;
+    padding-left:25px;
+    padding-top: 25px;
+}
+.yellow{
+    width:100px;
+    height:100px;
+    background-color:yellow;
+    margin:2px;
+    border:1px solid black;
+    border-radius: 6px;
+    float: left;
+}
