@@ -1,5 +1,5 @@
 html{
-    font-size:62.5%;
+    font-size:60%;
 }
 body{
     font:normal 100% Arial,sans-serif;
@@ -14,7 +14,7 @@ body{
     float:right
 }
 
-#outside{
+#out{
     width:350px;
     height:350px;
     margin:auto;
