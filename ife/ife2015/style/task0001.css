@@ -4,8 +4,6 @@
 body{
   /*方法2
   text-align:center;*/
-  padding:0;
-  margin:0;
   /*float:left;
   position:relative;
   left:50%;*/
@@ -126,4 +124,57 @@ img{
   top:-30px;
   position:relative;
 
+}
+
+/*三列布局*/
+/*三栏布局方法一
+#div-left{
+  background-color: red;
+  float:left;
+  width:300px;
+}
+#div-right{
+  background-color:blue;
+  float:right;
+  width:300px;
+}
+#div-center{
+  background-color:yellow;
+  margin:auto;
+}*/
+/*三栏布局方法二*/
+
+
+/*#div-left{
+  background-color: red;
+  width:300px;
+  position:absolute;
+  top:500px;
+  left:0;
+
+}
+#div-right{
+  background-color: yellow;
+  width:300px;
+  position:absolute;
+  right:0;
+  top:500px;
+
+}
+*/
+
+/*容器布局*/
+#out{
+  background-color:red;
+  border:1px solid red;
+  margin:auto;
+}
+.blue{
+  width:200px;
+  height:100px;
+  background-color:blue;
+  float:left;
+  padding:5px;
+  margin:5px;
+  border-radius: 5px;
 }
