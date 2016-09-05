@@ -1,0 +1,89 @@
+*{
+    margin:0;
+    padding:0;
+}
+/*header*/
+header {
+    position:relative;
+    width:100%;
+    height:80px;
+    background-color:#FF8C00;
+
+}
+#header-logo{
+    position:absolute;
+    left:10%;
+    bottom:5px;
+    font:20px "Microsoft YaHei";
+}
+#header-catalog{
+    position:absolute;
+    right:15%;
+    bottom:5px;
+    height:20px;
+    list-style:none;
+}
+.catalog {
+    float:left;
+    text-align:center;
+    font:14px "SimSun";
+    margin:0 28px;
+}
+.catalog a{
+    text-decoration:none;
+}
+#header-image{
+    position:absolute;
+    right:10px;
+    bottom:0px;
+}
+
+
+/*main*/
+#introduction{
+    background-image:url(../img/banner-bg.jpg);
+    width:100%;
+    height:868px;
+    position:relative;
+}
+#introduction-text{
+    position:absolute;
+    right:10%;
+    bottom:0;
+    width:300px;
+    height:200px;
+    background:#fff;
+
+}
+#introduction-text h2{
+    padding:10px 10px 10px 10px;
+    font:14px "SimSun";
+    margin-bottom:2px;
+    position:relative;
+    left:200px;
+}
+#introduction-text p{
+    padding:10px 10px 30px 10px;
+    font:12px "SimSun";
+    line-height:150%;
+}
+
+#main-details{
+    width:100%;
+    background:	#778899;
+}
+#item{
+    width:990px;
+    margin:auto;
+}
+.section{
+    display:inline-block;
+    margin-top:10px;
+    margin-left:10px;
+    padding:5px;
+    width:320px;
+    height:400px;
+    background:#fff;
+}
+
+
