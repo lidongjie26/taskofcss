@@ -2,9 +2,165 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>Blog</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/blog.css">
 </head>
 <body>
+<header>
+  <div id="header-zhuti">
+    <a id="header-logo" href="index.html">My LOGO</a>
+    <nav>
+      <ul id="header-catalog">
+        <li class="catalog"><a href="index.html">首页</a></li>
+        <li class="catalog"><a href="blog.html">文章</a></li>
+        <li class="catalog"><a href="gallery.html">作品</a></li>
+        <li class="catalog"><a href="about.html">关于</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div>
+    <a id="header-image" href=""><img src="img/icon-github.png"></a>
+  </div>
+</header>
+
+<main>
+  <div class="section">
+    <div class="date">9.6</div>
+    <div class="tag">CSS</div>
+    <article>
+      <h1>有关导航栏的总结</h1>
+      <h2>导航栏的书写问题</h2>
+      <p class="main-text">
+        导航栏一般出现在header的右侧，一般都是水平放置。
+        导航栏一般用无序列表ul来表达，html5中专门有一个nav容器来装导航栏。
+        li设置为float：left；而且相互的距离间隔设置固定nav放置在大容器右侧。
+        去掉圆点用list-style-type，去掉下划线则在a中设置text-decoration.
+      </p>
+      <p class="message">lidongjie 发表于 2016年9月6日 </p>
+    </article>
+  </div >
+
+  <div class="section">
+    <div class="date">9.6</div>
+    <div class="tag">CSS</div>
+    <article>
+      <h1>有关滚动条的问题</h1>
+      <h2>滚动条的设置要求</h2>
+      <p class="main-text">页面实际内容宽度为980px，头部背景、大图、底部背景均为100%宽，
+        当浏览器宽度低于980px时，页面宽度不变，允许出现横向滚动条。
+        右上角的Github图标在浏览器低于980px时消失。
+      </p>
+      <p class="message">lidongjie 发表于 2016年9月6日</p>
+    </article>
+  </div>
+  <div class="section">
+    <div class="date">9.6</div>
+    <div class="tag">CSS</div>
+    <article>
+      <h1>平均摆放立方体的问题</h1>
+      <h2>三个带图片带文字的方块水平放置</h2>
+      <p class="main-text">
+      首先这三个方块可以设置共同的class，对于img和p也需要增加div，
+        可以设置为相同的class，便于img调整边框的距离，而对于三个div，
+      </p>
+      <p class="message">lidongjie 发表于 2016年9月6日</p>
+    </article>
+  </div>
+  <div id="yema-1">
+    <div id="yema-2">
+      <div id="first-page" class="page-button">第一页</div>
+      <div id="previous-page" class="page-button">上一页</div>
+      <div id="page-1" class="page-button">1</div>
+      <div id="page-2" class="page-button">2</div>
+      <div id="page-3" class="page-button">3</div>
+      <div id="page-4" class="page-button">4</div>
+      <div id="page-bypass" class="page-button">···</div>
+      <div id="next-page" class="page-button">下一页</div>
+      <div id="last-page" class="page-button">最后页</div>
+    </div>
+  </div>
+</main>
+<aside>
+  <div id="search-bar">
+    <img >
+    <input type="text" value="keywords">
+    <input type="button" value="GO">
+  </div>
+  <div id="choice">
+    <div id="choice-html">HTML</div>
+    <div id="choice-css">CSS</div>
+    <div id="choice-javascript">Javascript</div>
+    <div id="choice-other">其他文章</div>
+  </div>
+  <div id="rili"></div>
+  <div id="choice-tag"></div>
+
+</aside>
+
+<footer>
+  <nav>
+    <ul>
+      <li><a href="index.html">首页</a></li>
+      <li><a href="blog.html">文章</a></li>
+      <li><a href="gallery.html">作品</a></li>
+      <li><a href="about.html">关于</a></li>
+    </ul>
+  </nav>
+  <hr>
+  <div class="reference">
+    <ul>
+      <li class="title">学习资料</li>
+      <li><a href="">LINK</a></li>
+      <li><a href="">Hover样式</a></li>
+      <li><a href="">LINK</a></li>
+      <li><a href="">LINK</a></li>
+      <li><a href="">LINK</a></li>
+      <li><a href="">LINK</a></li>
+    </ul>
+    <ul>
+      <li class="title">学习资料</li>
+      <li><a href="">LINK</a></li>
+      <li><a href="">Hover样式</a></li>
+      <li><a href="">LINK</a></li>
+      <li><a href="">LINK</a></li>
+      <li><a href="">LINK</a></li>
+      <li><a href="">LINK</a></li>
+    </ul>
+    <ul>
+      <li class="title">学习资料</li>
+      <li><a href="">LINK</a></li>
+      <li><a href="">Hover样式</a></li>
+      <li><a href="">LINK</a></li>
+      <li><a href="">LINK</a></li>
+      <li><a href="">LINK</a></li>
+      <li><a href="">LINK</a></li>
+    </ul>
+    <ul>
+      <li class="title">学习资料</li>
+      <li><a href="">LINK</a></li>
+      <li><a href="">Hover样式</a></li>
+      <li><a href="">LINK</a></li>
+      <li><a href="">LINK</a></li>
+      <li><a href="">LINK</a></li>
+      <li><a href="">LINK</a></li>
+    </ul>
+    <ul>
+      <li class="title">学习资料</li>
+      <li><a href="">LINK</a></li>
+      <li><a href="">Hover样式</a></li>
+      <li><a href="">LINK</a></li>
+      <li><a href="">LINK</a></li>
+      <li><a href="">LINK</a></li>
+      <li><a href="">LINK</a></li>
+    </ul>
+  </div>
+  <div id="edition">
+    版本信息
+  </div>
+  <div id="footer-img"><img src="img/icon-github.png"></div>
+</footer>
+
 
 </body>
 </html>

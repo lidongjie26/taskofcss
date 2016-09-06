@@ -10,24 +10,28 @@ header {
     background-color:#FF8C00;
 
 }
+#header-zhuti{
+    position:relative;
+    width:980px;
+    margin:0 auto;
+}
 #header-logo{
     position:absolute;
-    left:10%;
-    bottom:5px;
+    top:50px;
     font:20px "Microsoft YaHei";
+    text-decoration: none;
 }
 #header-catalog{
     position:absolute;
-    right:15%;
-    bottom:5px;
-    height:20px;
-    list-style:none;
+    right:10px;
+    padding-top:61px;
 }
 .catalog {
     float:left;
-    text-align:center;
     font:14px "SimSun";
-    margin:0 28px;
+    margin:0 14px;
+    list-style-type: none;
+    display:block;
 }
 .catalog a{
     text-decoration:none;
@@ -37,53 +41,58 @@ header {
     right:10px;
     bottom:0px;
 }
-
-
-/*main*/
-#introduction{
-    background-image:url(../img/banner-bg.jpg);
+footer{
     width:100%;
-    height:868px;
-    position:relative;
+    background:#000;
+    font:16px SimSun;
+    color:#fff;
 }
-#introduction-text{
-    position:absolute;
-    right:10%;
-    bottom:0;
-    width:300px;
-    height:200px;
-    background:#fff;
+footer nav{
+    width:50%;
+    margin:0 auto;
+}
+ footer nav ul{
+    text-align:center
+}
+ footer nav li {
+     display:inline-block;
+     padding:10px;
 
+ }
+ nav li a{
+     text-decoration:none;
+ }
+.reference{
+    height: 275px;
+    width: 980px;
+    margin: 0 auto;
 }
-#introduction-text h2{
-    padding:10px 10px 10px 10px;
-    font:14px "SimSun";
-    margin-bottom:2px;
-    position:relative;
-    left:200px;
+.reference ul{
+    float:left;
+    width:160px;
+    margin:25px 18px;
+    list-style-type: none;
 }
-#introduction-text p{
-    padding:10px 10px 30px 10px;
-    font:12px "SimSun";
-    line-height:150%;
-}
-
-#main-details{
-    width:100%;
-    background:	#778899;
-}
-#item{
-    width:990px;
-    margin:auto;
-}
-.section{
+.title{
     display:inline-block;
-    margin-top:10px;
-    margin-left:10px;
-    padding:5px;
-    width:320px;
-    height:400px;
-    background:#fff;
+    height:30px;
 }
+footer a{
+    color:#fff;
+}
+footer a:hover{
+    color:#fff;
+}
+#edition{
+    text-align:center;
+    width: 980px;
+    margin:10px auto;
+}
+#footer-img{
+    width:980px;
+    margin:0 auto;
+    text-align:center;
+}
+
 
 

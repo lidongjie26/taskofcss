@@ -1,0 +1,102 @@
+*{
+    padding:0;
+    margin:0;
+}
+main{
+    width:100%;
+    background:#778899;
+    padding:10px 0;
+}
+.section{
+    width: 980px;
+    height:400px;
+    margin:-40px auto;
+}
+.date{
+    position:relative;
+    left:-60px;
+    top:100px;
+    height:40px;
+    width:60px;
+    background:#ff2400;
+    font:16px "Microsoft YaHei";
+    text-align:center;
+    line-height:40px;
+}
+.tag{
+    position:relative;
+    left:-60px;
+    top:100px;
+    height:40px;
+    width:60px;
+    background:#bc1717;
+    font:16px "Microsoft YaHei";
+    text-align:center;
+    line-height:40px;
+}
+article{
+    width:800px;
+    height:300px;
+    background:#fff;
+    display:block;
+    box-shadow:1px 1px 2px 1px #848484;
+}
+article h1{
+    font:16px "Microsoft YaHei";
+    padding:10px;
+
+}
+article h2{
+    padding:10px;
+    font:14px "Microsoft YaHei";
+    color:#666;
+}
+article p{
+    padding:5px;
+    font:12px "Microsoft YaHei";
+}
+.message{
+    text-align:right;
+    color:#938e8c;
+}
+#yema-1{
+    width:980px;
+    margin:20px auto;
+
+}
+#yema-2{
+    width:800px;
+    height:30px;
+    margin-left:30px;
+
+}
+.page-button{
+    float:left;
+    margin:5px;
+    background:#fff;
+    text-align:center;
+    padding:15px;
+    font:12px  "Microsoft YaHei";
+}
+#previous-page,
+#first-page,
+#last-page
+{
+    width:60px;
+}
+#page-bypass{
+    width:45px;
+}
+#page-1,
+#page-2,
+#page-3,
+#page-4{
+    width:30px;
+}
+#first-page,#previous-page{
+    color:#778899;
+}
+#page-1{
+    background:#ff2400;
+}
+

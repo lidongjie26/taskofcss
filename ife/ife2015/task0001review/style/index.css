@@ -1,0 +1,94 @@
+/*main*/
+*{
+    padding:0;
+    margin:0;
+}
+p{
+    text-indent:2em;
+}
+#introduction{
+    background-image:url(../img/banner-bg.jpg);
+    width:100%;
+    height:868px;
+    position:relative;
+}
+#introduction-text{
+    position:absolute;
+    right:10%;
+    bottom:0;
+    width:300px;
+    height:200px;
+    background:#fff;
+
+}
+#introduction-text h2{
+    padding:10px 10px 10px 10px;
+    font:14px "SimSun";
+    margin-bottom:2px;
+    position:relative;
+    left:200px;
+}
+#introduction-text p{
+    padding:10px 10px 30px 10px;
+    font:12px "SimSun";
+    line-height:150%;
+}
+
+main{
+    width:100%;
+    padding:0;
+    margin:0;
+}
+#main-details{
+    width:100%;
+    background:	#778899;
+}
+#item{
+    width:990px;
+    height:530px;
+    margin:0 auto;
+}
+.section{
+    float:left;
+    width:320px;
+    height:380px;
+    margin:10px 5px;
+    background:#fff;
+}
+.body-img{
+    margin:10px;
+}
+.body-text{
+    margin:3px 30px 25px 30px;
+    font-size:12px;
+    line-height:170%;
+}
+#myself{
+    width:980px;
+    margin:0 auto;
+    height: 400px;
+    background:#fff;
+
+}
+#myself-image{
+    position:relative;
+    top:-50px;
+    text-align:center;
+}
+#myself-text{
+    width:400px;
+    margin:0 auto;
+    text-align:center;
+}
+#myself h2{
+    display:inline-block;
+    padding-bottom:20px;
+    font:20px "Century Gothic";
+
+}
+#myself p{
+    font-size:16px;
+    text-align:left;
+}
+
+
