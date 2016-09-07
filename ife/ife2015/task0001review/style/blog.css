@@ -7,10 +7,16 @@ main{
     background:#778899;
     padding:10px 0;
 }
+#main-1{
+    width:980px;
+    height:1200px;
+    margin:0 auto;
+    position:relative;
+}
 .section{
     width: 980px;
     height:400px;
-    margin:-40px auto;
+    margin:-80px auto 0 auto;
 }
 .date{
     position:relative;
@@ -35,7 +41,7 @@ main{
     line-height:40px;
 }
 article{
-    width:800px;
+    width:700px;
     height:300px;
     background:#fff;
     display:block;
@@ -82,16 +88,16 @@ article p{
 #first-page,
 #last-page
 {
-    width:60px;
+    width:40px;
 }
 #page-bypass{
-    width:45px;
+    width:30px;
 }
 #page-1,
 #page-2,
 #page-3,
 #page-4{
-    width:30px;
+    width:20px;
 }
 #first-page,#previous-page{
     color:#778899;
@@ -99,4 +105,115 @@ article p{
 #page-1{
     background:#ff2400;
 }
+aside{
+    float:right;
+    width:300px;
+    height:1200px;
+    position:relative;
+    top:80px;
+    left:40px;
+}
+aside>div{
+    margin-bottom:20px;
+}
+#search-bar-1{
+    width:260px;
+    height:80px;
+    background:#fff;
+    line-height:80px;
+    text-align:center;
+}
+
+#search-text{
+    width:170px;
+    height:40px;
+    border:1px solid #848484;
+}
+#search-button{
+    width:50px;
+    height:40px;
+    text-align:center;
+    line-height: 40px;
+    background:#848484;
+}
+#choice{
+    width:260px;
+    height:200px;
+}
+#choice>div{
+    width:256px;
+    height:49px;
+    border-top:1px solid #000000;
+    background:#fff;
+    text-align:center;
+    padding-top:15px;
+    font:16px "Microsoft YaHei";
+}
+#choice-html,
+#choice-javascript,
+#choice-other{
+    border-left:4px solid #d45d5c;
+}
+#choice-css{
+    border-left:4px solid #ff2400;
+}
+#rili{
+    width:260px;
+    height:240px;
+    background:#fff;
+    margin-top:80px;
+    text-align:center;
+}
+#year-date{
+    width:200px;
+    height:50px;
+    margin:0 auto;
+    text-align:center;
+    font:16px "Microsoft YaHei";
+    line-height:50px;
+}
+#riqi{
+    width:210px;
+    height:150px;
+  margin:0 auto;
+}
+table td{
+    width:30px;
+    height:30px;
+
+}
+#choice-tag{
+    width:260px;
+    height:200px;
+    background:#fff;
+    padding:20px 20px;
+}
+#choice-this-time{
+    background:#ff2400;
+}
+
+p{
+    color:#ff2400;
+    line-height:30px;
+
+}
+.tags{
+    font:20px SimSun;
+    color:#778899;
+}
+.big-size{
+    font:28px SimSun;
+    font-weight:bolder;
+}
+.middle-size{
+    font:24px SimSun;
+    font-weight:bold;
+}
+.small-size{
+    font:16px SimSun;
+}
+.smaller-size{
+    font:14px SimSun;
+}
+
 
