@@ -1,0 +1,158 @@
+
+main{
+    width:100%;
+    background:#848484;
+    padding:100px 0 20px 0;
+}
+#main-1{
+    width:980px;
+    margin:0 auto;
+    height:1400px;
+    background:#fff;
+    position:relative;
+
+}
+#central-axis{
+    width:5px;
+    height:1400px;
+    background: #848484;
+    margin:0 auto;
+}
+#central-content{
+    width:180px;
+    height:1400px;
+    position:absolute;
+    top:-50px;
+    left:400px;
+}
+#circle-1{
+    width:180px;
+    height:180px;
+    border-radius: 90px;
+    background:#848484;
+}
+#circle-1 img{
+    width:160px;
+    height:160px;
+    position:absolute;
+    left:10px;
+    top:10px;
+}
+.circle-100{
+    position:relative;
+    width:110px;
+    height:110px;
+    border-radius:55px;
+    background:#848484;
+    left:35px;
+}
+#rectangle-1,
+#rectangle-2,
+#rectangle-3,
+#rectangle-4,
+#rectangle-5{
+    width:60px;
+    height:23px;
+    border:5px solid #848484;
+    border-radius:10px;
+    text-align:center;
+    position:relative;
+    left:55px;
+    background:#fff;
+}
+.circle-100 img{
+    width:100px;
+    height:100px;
+    position:absolute;
+    left:5px;
+    top:5px;
+}
+#circle-2{
+    top:160px;
+}
+#circle-3{
+    top:260px;
+}
+
+#rectangle-1{
+    top:285px;
+}
+#rectangle-2{
+    top:330px;
+}
+#rectangle-3{
+    top:370px;
+}
+
+#circle-4{
+    top:400px;
+}
+#rectangle-4{
+    top:420px;
+}
+#rectangle-5{
+    top:460px;
+}
+p{
+    font-family:"Microsoft YaHei";
+}
+#name,
+#cell-phone,
+#practice,
+#education{
+    font-size:20px;
+    position:absolute;
+    left:300px;
+}
+#introduce,
+#phone-numbers,
+#practice-1,
+#practice-2,
+#myself-2008,
+#myself-2011,
+#myself-2015{
+    font-size:14px;
+    position:absolute;
+    left:550px;
+}
+#name{
+    top:200px;
+
+}
+#introduce{
+    top:200px;
+    width:300px;
+    text-indent: 2em;
+}
+#cell-phone{
+    top:420px;
+}
+#phone-numbers{
+    top:420px;
+}
+#education{
+    top:640px;
+}
+#myself-2008{
+    top:640px;
+}
+#myself-2011 {
+    top:710px;
+}
+#myself-2015{
+    top:780px;
+}
+#practice{
+    top:980px;
+}
+#practice-1{
+    top:980px;
+}
+#practice-2{
+    top:1050px;
+}
+
+
+
+
+
