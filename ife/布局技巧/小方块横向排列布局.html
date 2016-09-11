@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小方块横向排列</title>
+    <style>
+        body,ul,li{
+            padding:0;
+            margin:0;
+        }
+        ul,li{
+            list-style-type:none;
+        }
+        .container{
+            width:460px;
+            height:260px;
+            border:3px solid #000;
+        }
+        ul{
+            margin-right:-200px;
+            overflow:hidden;
+            /*父容器没有宽度的话，将父容器的范围扩大，直接设置一个负边距即可，子元素也不会超过黑边*/
+        }
+        li{
+            float:left;
+            height: 100px;
+            width:100px;
+            background:#FF8C00;
+            margin-right:20px;
+            margin-bottom:10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li>元素1</li>
+            <li>元素2</li>
+            <li>元素3</li>
+            <li>元素4</li>
+            <li>元素5</li>
+            <li>元素6</li>
+            <li>元素7</li>
+            <li>元素8</li>
+
+        </ul>
+    </div>
+
+</body>
+</html>
