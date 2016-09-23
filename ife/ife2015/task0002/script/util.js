@@ -103,3 +103,66 @@ function trim(str){
     return str.replace(/^\s+|\s$/g,'');
 }
 console.log(trim(str));
+
+
+// 实现一个遍历数组的方法，针对数组中每一个元素执行fn函数，并将数组索引和元素作为参数传递
+function each(arr, fn) {
+    // your implement
+    for(var i = 0,len = arr.length;i < len; i++){
+        fn(arr[i],i);
+    }
+}
+
+// 其中fn函数可以接受两个参数：item和index
+
+// 使用示例
+/*var arr = ['java', 'c', 'php', 'html'];
+function output(item) {
+    console.log(item);
+}
+each(arr, output);  // java, c, php, html*/
+var arr = ['java', 'c', 'php', 'html'];
+function output(item, index) {
+    console.log(index + ': ' + item)
+}
+each(arr, output);  // 0:java, 1:c, 2:php, 3:html
+
+
+// 获取一个对象里面第一层元素的数量，返回一个整数
+function getObjectLength(obj) {
+    var num = 0;
+    for(x in obj){
+        if(obj.hasOwnProperty(x)){
+            num++;
+        }
+    }
+    return num;
+}
+
+// 使用示例
+var obj = {
+    a: 1,
+    b: 2,
+    c: {
+        c1: 3,
+        c2: 4
+    }
+};
+console.log(getObjectLength(obj)); // 3
+
+
+// 判断是否为邮箱地址
+function isEmail(emailStr) {
+    // return (/^[a-z0-9]([-_\.]?[a-z0-9]+)*@([-_]?[a-z0-9]+)+[\.][a-z]{2,7}([\.][a-z]{2})?$/i).test(emsilStr);
+    return emailStr.search(/^[a-z0-9]([-_\.]?[a-z0-9]+)*@([-_]?[a-z0-9]+)+[\.][a-z]{2,7}([\.][a-z]{2})?$/i) !== -1;
+}
+
+console.log(isEmail('860692354@qq.com'))
+// 判断是否为手机号
+function isMobilePhone(phone) {
+    phone = phone + '';
+    // return (/^(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/).test(phone);
+    return phone.search(/^1[3|4|5|7|8][0-9]{9}$/) !== -1;
+}
+
+console.log(isMobilePhone(18101361830));
