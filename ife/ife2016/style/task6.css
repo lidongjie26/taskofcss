@@ -242,7 +242,6 @@ main{
     line-height:16px;
 }
 .content-text-1:first-letter{
-    float:left;
     font:70px "Microsoft YaHei","sans-serif";
     color:#f5e327;
 }
@@ -368,7 +367,6 @@ footer{
     margin:0 auto ;
     height:60px;
     width:892px;
-    background:#5a5b5b;
     overflow: hidden;
     border-top:1px solid #938e8c;
 }
@@ -377,6 +375,7 @@ footer a{
     font:12px "Microsoft YaHei","sans-serif";
     color:#d45d5c;
 }
+
 
 
 
