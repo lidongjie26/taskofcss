@@ -3,15 +3,35 @@
 <head>
     <meta charset="utf-8">
     <title>IFE JavaScript Task 01</title>
-    <script src="js/task16.js"></script>
+
 </head>
+<style>
+    .td{
+        width:100px;
+        height:30px;
+        text-align:center;
+        font:16px "Microsoft YaHei","sans-serif";
+
+    }
+    .wrap{
+        font:bold 14px "Microsoft YaHei","sans-serif";
+        line-height: 40px;
+        margin:30px;
+        width:400px;
+        padding:30px;
+        padding-bottom:100px;
+        border:1px solid #000;
+        overflow: hidden;
+
+    }
+</style>
 <body>
 
-<div>
+<div class="wrap">
     <label>城市名称：<input id="aqi-city-input" type="text"></label><br>
     <label>空气质量指数：<input id="aqi-value-input" type="text"></label><br>
     <button id="add-btn">确认添加</button>
-</div>
+
 <table id="aqi-table">
     <!--
       <tr>
@@ -25,6 +45,7 @@
       </tr>
      -->
 </table>
-
+</div>
+<script src="js/task16.js"></script>
 </body>
 </html>
