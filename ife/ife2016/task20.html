@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task20</title>
+    <style>
+        .item{
+            height:40px;
+            width:40px;
+            float:left;
+            margin-left:20px;
+           line-height: 40px;
+            text-align:center;
+            background:#bc1717;
+            color:#fff;
+            font:14px 'Microsoft YaHei','sans-serif';
+        }
+        #content{
+            overflow:hidden;
+            margin-top:20px;
+        }
+        td{
+            width:250px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td> <textarea class="textBox" title="text" ></textarea>
+                </td>
+                <td><input type="button" class="insertLeft" value="左侧入">
+                    <input type="button" class="insertRight" value="右侧入">
+                    <input type="button" class="pushLeft" value="左侧出">
+                    <input type="button" class="pushRight" value="右侧出">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" class='searchText' title="search" >
+                </td>
+                <td>
+                    <input type="button" class="searchBtn" value="查询">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <div id="content">
+
+    </div>
+    <script src="js/task20.js"></script>
+</body>
+</html>
