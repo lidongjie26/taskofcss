@@ -7,12 +7,16 @@
         *{
             font:14px 'Microsoft YaHei','sans-serif';
         }
+        form{
+            display:block;
+        }
         .content{
             width:350px;
+            height:250px;
             margin-top:20px;
             margin-left:30px;
         }
-        .item{
+        .item,.hobby{
             position:relative;
             height:40px;
             padding:0 20px;
@@ -42,7 +46,13 @@
 <body>
     <form>
         <label>Tag:</label>
-        <textarea class="textBox" title="text" style="vertical-align: top;" rows='3' cols="40"></textarea>
+        <textarea class="textBox" title="text" style="vertical-align: top;" rows='1' cols="40"></textarea>
+    </form>
+    <div class="content"></div>
+    <form>
+        <label>Tag</label>
+        <textarea class="textBox" title="hobby" style="vertical-align: top;" rows='3' cols="40"></textarea>
+        <br><br><input type="button" value="确认兴趣爱好" class="inputBtn">
     </form>
     <div class="content"></div>
     <script src="js/task21.js"></script>

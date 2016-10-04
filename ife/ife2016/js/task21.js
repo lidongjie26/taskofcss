@@ -31,41 +31,38 @@ var EventHandler={
         return event.target||event.srcElement;
     }
 };
-
+//trim处理
 function trim(str){
     return str.replace(/^[\s,，、\r\t]+|[\s,，、\r\t]$/g,'');
 }
+//不能超过10个，超过10个，去掉开头第一个，新的加到最后
+function deleteMore(content,className){
+    var length=document.getElementsByClassName(className).length;
+    if(length==10){
+        content.removeChild(content.firstChild);
+    }
+}
+//不能重复，重复去重
+function test(value,className){
+    var bool=false;
+    var items=document.getElementsByClassName(className);
+    for(var i=0;i<items.length;i++){
+        if(value==items[i].firstChild.innerHTML){
+            bool=true;
+            break;
+        }
+    }
+    return bool;
+}
+
 var wrap=document.getElementsByClassName('content')[0];
+var wrapHobby=document.getElementsByClassName('content')[1];
 var body=document.body;
 var textBox=document.getElementsByClassName('textBox')[0];
+var textHobby=document.getElementsByClassName('textBox')[1];
 var item;
-EventHandler.addHandler(textBox,'keyup',function(event){
-    var target=EventHandler.getTarget(event);
-    var length=document.getElementsByClassName('item').length;
-    var reg=/[\s,，、\r\t]$/;
-    if(reg.test(target.value)){
-        var value=textBox.value;
-        value=trim(value);
-        console.log(value);
-        if(value===''){
-            alert('输入为空，请重新输入');
-            textBox.focus();
-        }
-        else{
-            item=document.createElement('div');
-            item.className='item';
-            item.innerHTML='<p class="text">'+value+'</p>';
-            if(length==10){
-                wrap.removeChild(wrap.firstChild);
-            }
-            wrap.appendChild(item);
-            textBox.value='';
-            textBox.focus();
-        }
-
-    }
-});
 var tip;
+var reg=/[\s,，、\r\t]/;
 EventHandler.addHandler(wrap,'mouseover',function(event){
     var target=EventHandler.getTarget(event);
     switch(target.className){
@@ -89,12 +86,67 @@ EventHandler.addHandler(wrap,'mouseout',function(event){
     switch(target.className){
         case 'item':
             target.removeChild(target.lastElementChild);
+            break;
+        case 'text':
+            target.parentNode.removeChild(document.getElementsByClassName('tip')[0]);
+            break;
     }
 });
-EventHandler.addHandler(wrap,'click',function (event) {
+function change(target){
+    if(reg.test(target.value)){
+        var value=textBox.value;
+        value=trim(value);
+        if(value===''){
+            alert('输入为空，请重新输入');
+            textBox.focus();
+        }else if(test(value,'item')){
+            textBox.value='';
+            textBox.focus();
+        }
+        else{
+            item=document.createElement('div');
+            item.className='item';
+            item.innerHTML='<p class="text">'+value+'</p>';
+            deleteMore(wrap,'item');
+            wrap.appendChild(item);
+            textBox.value='';
+            textBox.focus();
+        }
+
+    }
+}
+EventHandler.addHandler(textBox,'input',function(event){
+    var target=EventHandler.getTarget(event);
+    change(target);
+});
+EventHandler.addHandler(textBox,'propertychange',function(event){
+    var target=EventHandler.getTarget(event);
+    change(target);
+});
+EventHandler.addHandler(body,'click',function (event) {
     var target=EventHandler.getTarget(event);
     switch(target.className){
         case 'item':
             wrap.removeChild(target);
+            break;
+        case 'inputBtn':
+            var str=textHobby.value.toString();
+            var arr=str.split(reg);
+            for(var i=0;i<arr.length;i++){
+                arr[i]=trim(arr[i]);
+                if(!test(arr[i],'hobby')){
+                    if(arr[i]!==''){
+                        var hobby=document.createElement('div');
+                        hobby.className='hobby';
+                        hobby.innerHTML='<p class="text">'+arr[i]+'</p>';
+                        console.log(hobby.innerHTML);
+                        deleteMore(wrapHobby,'hobby');
+                        wrapHobby.appendChild(hobby);
+                        textHobby.value='';
+                        textHobby.focus();
+                    }
+                }
+            }
+            break;
     }
 });
