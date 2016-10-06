@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task23</title>
+    <style>
+        *{
+            font:3px 'Microsoft YaHei','sans-serif';
+        }
+        div{
+            border:1px solid #000;
+        }
+        #content{
+            width:1300px;
+            height:200px;
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+        }
+        .first{
+            width:400px;
+            height:150px;
+            display:flex;
+            justify-content: space-around;
+            align-items:center;
+        }
+        .second{
+            width:100px;
+            height:60px;
+            display:flex;
+            justify-content: space-around;
+            align-items:center;
+        }
+        .three{
+            width:15px;
+            height:30px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .four{
+            width:10px;
+            height:10px;
+            display:flex;
+            justify-content: space-around;
+            align-items:center;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div id="content">super
+            <div class="first">ca
+                <div class="second">apple
+                    <div class="three">1</div>
+                    <div class="three">2</div>
+                    <div class="three">0</div>
+                    <div class="three">4</div>
+                </div>
+                <div class="second">5</div>
+                <div class="second">6
+                    <div class="three">7</div>
+                    <div class="three">8</div>
+                </div>
+            </div>
+            <div class="first">9
+                <div class="second">10
+                    <div class="three">12</div>
+                    <div class="three">11</div>
+                    <div class="three">15</div>
+                </div>
+                <div class="second">16
+                    <div class="three">17
+                        <div class="four">0</div>
+                    </div>
+                    <div class="three">19</div>
+                </div>
+            </div>
+            <div class="first">20</div>
+        </div>
+    </section>
+    <br>
+    <form>
+        <input type="button" class="btn" value="深度遍历">
+        <input type="button" class="btn" value="广度遍历">
+        <br>
+        <br>
+        <input type="text" class="textBox" value="" title="text">
+        <input type="button" class="btn" value="深度优先查询">
+        <br>
+        <br>
+        <input type="text" class="textBox" value="" title="text01">
+        <input type="button" class="btn" value="广度优先查询">
+    </form>
+    <script src="js/task23.js"></script>
+</body>
+</html>
