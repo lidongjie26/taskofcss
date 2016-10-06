@@ -78,7 +78,6 @@ EventHandler.addHandler(wrap,'mouseover',function(event){
             tip.className='tip';
             target.parentNode.appendChild(tip);
             break;
-
     }
 });
 EventHandler.addHandler(wrap,'mouseout',function(event){

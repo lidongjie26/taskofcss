@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task22</title>
+    <style>
+        div{
+            border:1px solid #000;
+        }
+        #content{
+            width:800px;
+            height:200px;
+            display:flex;
+            justify-content: space-around;
+            align-items:center;
+        }
+        .first{
+            width:350px;
+            height:150px;
+            display:flex;
+            justify-content: space-around;
+            align-items:center;
+        }
+        .second{
+            width:150px;
+            height:70px;
+            display:flex;
+            justify-content: space-around;
+            align-items:center;
+        }
+        .three{
+            width:60px;
+            height:30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div class="first">
+            <div class="second">
+                <div class="three"></div>
+                <div class="three"></div>
+            </div>
+            <div class="second">
+                <div class="three"></div>
+                <div class="three"></div>
+            </div>
+        </div>
+        <div class="first">
+            <div class="second">
+                <div class="three"></div>
+                <div class="three"></div>
+            </div>
+            <div class="second">
+                <div class="three"></div>
+                <div class="three"></div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <form>
+        <input type="button" id="btnFront" value="前序遍历">
+        <input type="button" id="btnCenter" value="中序遍历">
+        <input type="button" id="btnBack" value="后序遍历">
+        <input type="button" id="btnFloor" value="按层遍历">
+    </form>
+    <script src="js/task22.js"></script>
+</body>
+</html>
