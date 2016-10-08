@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task25</title>
+    <style>
+        *{
+            font:20px 'Microsoft YaHei','sans-serif';
+        }
+        #catalog{
+            width:300px;
+            overflow: hidden;
+        }
+        img{
+            height:15px;
+            width:15px;
+        }
+        p{
+            white-space:pre-wrap;
+            margin:0;
+            padding:0;
+            width:auto;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div id="catalog">
+            <div class="first"><p class="listName"><img class="image" src="image/plus.ico">全部商品分类</p>
+                <div class="second" style="display:none"><p class="listName">    <img class="image" src="image/plus.ico">家用电器</p>
+                    <div class="three" style="display:none"><p class="listName">        <img class="image" src="image/plus.ico">电视</p></div>
+                    <div class="three" style="display:none"><p class="listName">        <img class="image" src="image/plus.ico">空调</p></div>
+                    <div class="three" style="display:none"><p class="listName">        <img class="image" src="image/plus.ico">洗衣机</p></div>
+                    <div class="three" style="display:none"><p class="listName">        <img class="image" src="image/plus.ico">冰箱</p></div>
+                    <div class="three" style="display:none"><p class="listName">        <img class="image" src="image/plus.ico">厨卫</p></div>
+                </div>
+                <div class="second" style="display:none"><p class="listName">    <img class="image" src="image/plus.ico">手机、运营商、数码</p>
+                    <div class="three" style="display:none"><p class="listName">        <img class="image" src="image/plus.ico">手机通讯</p></div>
+                    <div class="three" style="display:none"><p class="listName">        <img class="image" src="image/plus.ico">运营商</p></div>
+                    <div class="three" style="display:none"><p class="listName">        <img class="image" src="image/plus.ico">手机配件</p></div>
+                    <div class="three" style="display:none"><p class="listName">        <img class="image" src="image/plus.ico">摄影摄像</p></div>
+                    <div class="three" style="display:none;"><p class="listName">        <img class="image" src="image/plus.ico">数码配件</p></div>
+                </div>
+                <div class="second" style="display:none;"><p class="listName">    <img class="image" src="image/plus.ico">电脑、办公</p>
+                    <div class="three" style="display:none;"><p class="listName">        <img class="image" src="image/plus.ico">电脑整机</p></div>
+                    <div class="three" style="display:none;"><p class="listName">        <img class="image" src="image/plus.ico">电脑配件</p></div>
+                    <div class="three" style="display:none;"><p class="listName">        <img class="image" src="image/plus.ico">外设产品</p></div>
+                    <div class="three" style="display:none;"><p class="listName">        <img class="image" src="image/plus.ico">游戏产品</p></div>
+                    <div class="three" style="display:none;"><p class="listName">        <img class="image" src="image/plus.ico">办公设备</p></div>
+                </div>
+                <div class="second" style="display:none;"><p class="listName">    <img class="image" src="image/plus.ico">家居、家具、家装、厨具</p>
+                    <div class="three" style="display:none;"><p class="listName">        <img class="image" src="image/plus.ico">厨具</p></div>
+                    <div class="three" style="display:none;"><p class="listName">        <img class="image" src="image/plus.ico">家装建材</p></div>
+                    <div class="three" style="display:none;"><p class="listName">        <img class="image" src="image/plus.ico">家纺</p></div>
+                    <div class="three" style="display:none;"><p class="listName">        <img class="image" src="image/plus.ico">家具</p></div>
+                    <div class="three" style="display:none;"><p class="listName">        <img class="image" src="image/plus.ico">灯具</p></div>
+                </div>
+                <div class="second" style="display:none;"><p class="listName">    <img class="image" src="image/plus.ico">男装、女装、童装、内衣</p>
+                    <div class="three" style="display:none;"><p class="listName">        <img class="image" src="image/plus.ico">女装</p></div>
+                    <div class="three" style="display:none;"><p class="listName">        <img class="image" src="image/plus.ico">男装</p></div>
+                    <div class="three" style="display:none;"><p class="listName">        <img class="image" src="image/plus.ico">配饰</p></div>
+                    <div class="three" style="display:none;"><p class="listName">        <img class="image" src="image/plus.ico">内衣</p></div>
+                    <div class="three" style="display:none;"><p class="listName">        <img class="image" src="image/plus.ico">童装童鞋</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <form>
+        <input type="text" class="textBox" title="text">
+        <input type="button" class="btnAdd" value="增加">
+        <br>
+        <input type="button" class="btnDelete" value="删除">
+        <br>
+        <input type="text" class="textSelect" title="select">
+        <input type="button" class="btnSelect" value="查找">
+    </form>
+    <script src="js/task25.js"></script>
+</body>
+</html>
