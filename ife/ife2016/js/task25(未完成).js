@@ -14,7 +14,7 @@ var oA=document.getElementsByTagName('a');
 for(i=0;i<nodes.length;i++){
     nodes[i].aFlag=true;
 }
-root.firstElementChild.aFlag=false;
+root.aFlag=false;
 var EventUtil={
     addEvent:function(element,type,handler){
             element['on'+type]=handler;
@@ -31,15 +31,17 @@ EventUtil.addEvent(body,'click',function(event){
     var nodeTarget=target.parentNode;
     switch(target.className){
         case 'display':
-            display(target,nodeTarget.aFlag);
             //aFlag为true，表示是折叠状态，现在需要打开，
+            console.log(nodeTarget.aFlag);
             if(nodeTarget.aFlag){
                 target.innerHTML='-';
                 nodeTarget.aFlag=false;
+                display(target,nodeTarget.aFlag);
             }
             else{
                 target.innerHTML='+';
                 nodeTarget.aFlag=true;
+                display(target,nodeTarget.aFlag);
             }
             break;
     }
@@ -47,24 +49,30 @@ EventUtil.addEvent(body,'click',function(event){
 function display(node,flag){
     var nodeList=[];
     nextSiblings(node,nodeList);
-    if(flag){
-        for( i=0;i<nodeList.length;i++){
-            nodeList[i].style.display='block';
-            nodeList[i].aFlag=false;
+    var nodes=node.parentNode.getElementsByTagName('div');
+    for( i=0;i<nodeList.length;i++){
+        if(nodeList[i].tagName=='DIV'){
+            if(flag){
+                nodeList[i].aFlag=true;
+            }else{
+                nodeList[i].aFlag=false;
+            }
+
+
         }
     }
-    var nodes=node.parentNode.getElementsByTagName('div');
+
     for(i=0;i<nodes.length;i++) {
-            if (nodes[i].aFlag) {
-                nodes[i].style.display='none';
-                nodes[i].aFlag=false;
-            } else {
-                nodes[i].style.display = 'block';
-                nodes[i].aFlag=true;
-            }
+        if (nodes[i].aFlag) {
+            nodes[i].style.display='none';
+        } else {
+            nodes[i].style.display = 'block';
+        }
     }
+
     nodeList=[];
 }
+//获取node节点的兄弟节点，放入list中
 function nextSiblings(node,list){
     if(node){
         list.push(node);

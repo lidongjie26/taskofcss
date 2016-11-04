@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task26</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            font:14px "Microsoft YaHei","sans-serif";
+        }
+        .content{
+            overflow:hidden;
+            width:100%;
+            height:600px;
+            margin:0 auto;
+            background:#000;
+            position:relative;
+        }
+        .planetWrap{
+            position:relative;
+            top:50px;
+            display:table;
+            margin:0 auto;
+            width:500px;
+            height:500px;
+        }
+        .planet{
+            position:absolute;
+            top:150px;
+            left:150px;
+            width:200px;
+            height:200px;
+            border-radius: 100px;
+            background:#1d60ff;
+        }
+        .track-1{
+            width:300px;
+            height:300px;
+            position:absolute;
+            top:100px;
+            left:100px;
+            border-radius:150px;
+            border:1px solid #938e8c;
+        }
+        .track-2{
+            width:350px;
+            height:350px;
+            position:absolute;
+            top:75px;
+            left:75px;
+            border-radius:175px;
+            border:1px solid #938e8c;
+        }
+        .track-3{
+            width:400px;
+            height:400px;
+            position:absolute;
+            top:50px;
+            left:50px;
+            border-radius:200px;
+            border:1px solid #938e8c;
+        }
+        .track-4{
+            width:450px;
+            height:450px;
+            position:absolute;
+            top:25px;
+            left:25px;
+            border-radius:225px;
+            border:1px solid #938e8c;
+        }
+        .airship{
+            overflow: hidden;
+            height:40px;
+            width:20px;
+            border-radius:10px;
+            background:#938e8c;
+            position:relative;
+        }
+        #airship-1{
+            left:-10px;
+            top:130px;
+        }
+        #airship-2{
+            left:-10px;
+            top:155px;
+        }
+        .energy{
+            height:40px;
+            width:20px;
+            background:#1d60ff;
+        }
+        .command{
+            position:absolute;
+            left:0;
+            top:0;
+            border:1px solid #000;
+            margin:5px;
+            padding:5px;
+            width:350px;
+            border-radius:10px;
+            background:#496077;
+        }
+        button{
+            border-radius:10px;
+        }
+        .console{
+            overflow:hidden;
+            position:absolute;
+            right:0;
+            top:446px;
+            width: 300px;
+            height:150px;
+            border-radius:5px;
+            border:2px solid #11456b;
+            background:#b6b7bc;
+
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="content">
+            <div class="planetWrap">
+                <div class="planet">
+                </div>
+                <div class="track-1">
+                    <div class="airship" id="airship-1">
+                        <div  class="energy"></div>
+                    </div>
+                </div>
+                <div class="track-2">
+                    <div class="airship" id="airship-2">
+                        <div  class="energy"></div>
+                    </div>
+                </div>
+                <div class="track-3"></div>
+                <div class="track-4"></div>
+            </div>
+
+        </div>
+    </section>
+    <div class="command">
+        <label>对一号飞船下达指令：</label>
+        <button>开始飞行</button>
+        <button>停止飞行</button>
+        <button>销毁</button><br>
+        <label>对二号飞船下达指令：</label>
+        <button>开始飞行</button>
+        <button>停止飞行</button>
+        <button>销毁</button><br>
+        <button>新的飞船起飞</button>
+    </div>
+    <div class="console"></div>
+    <script src="js/task26.js"></script>
+</body>
+</html>
