@@ -77,17 +77,13 @@ function renderChart() {
         var item=document.createElement('div');
         document.getElementsByClassName('aqi-chart-wrap')[0].appendChild(item);
         item.style.height=chartData['时间'][i]+'px';
-        if(chartData['时间'].length>90){
-            item.style.width='10px';
-        }
-        else if(chartData['时间'].length<90&&chartData['时间']
-                .length>10){
-            item.style.width='50px';
-        }
-        else{
-            item.style.width='100px';
-        }
-
+        item.innerHTML="<p class='aqi'>"+Math.round(chartData['时间'][i])+"</p>";
+        var p=item.firstElementChild;
+        var widthDiv=(document.body.clientWidth-20)/chartData['时间'].length;
+        p.style.width=widthDiv*2/3+'px';
+        item.style.width=widthDiv*2/3+'px';
+        item.style.marginRight=widthDiv*1/3+'px';
+        item.className='item';
         if(chartData['时间'][i]>0&&chartData['时间'][i]<100){
             item.style.backgroundColor='#008000';
         }

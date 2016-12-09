@@ -5,25 +5,25 @@
     <title>IFE JavaScript Task 01</title>
 
     <style>
+        body{
+            margin:0;
+            padding:0;
+        }
         .wrap{
             overflow:hidden;
         }
         .item{
-            width:30px;
-            background:#000;
-            float:left;
             position:relative;
         }
-        .aqiDiv{
-            width:40px;
-            height:40px;
-            font:16px 'Microsoft YaHei','sans-serif';
+       .aqi{
+            font:8px 'Microsoft YaHei','sans-serif';
             text-align: center;
             line-heigth:40px;
             position:absolute;
-            left:-40px;
+            width:40px;
+            left:0;
             top:-40px;
-            border:1px solid #000;
+           z-index: 99;
         }
     </style>
 </head>
