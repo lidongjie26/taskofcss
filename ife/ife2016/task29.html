@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task29</title>
+    <style>
+        body{
+            margin:40px;
+            padding:40px;
+            font:16px 'Microsoft YaHei','sans-serif';
+        }
+        .textbox{
+            width:400px;
+            height: 30px;
+            margin-left:30px;
+            background: #fff;
+            border-radius:3px;
+            border:1px solid #4e5766;
+        }
+        .submit{
+            width:60px;
+            height:30px;
+            margin-left:30px;
+            padding:0;
+            background:#1d60ff;
+            color:#fff;
+            border-radius:3px;
+            border:1px solid #1d60ff;
+        }
+        .tip{
+            margin-left:62px;
+            color:#4e5766;
+        }
+    </style>
+</head>
+<body>
+    <form target="fra" onsubmit="return check()">
+        <span>名称</span><input class="textbox" type="text" value=""/><input class="submit" type="submit" onclick="check()" value="验证"/>
+        <p class="tip">必填，长度为4~16个字符</p>
+    </form>
+    <iframe id="fra" name="fra" style="display:none;"></iframe>
+    <script type="text/javascript" src="js/task29.js"></script>
+</body>
+</html>

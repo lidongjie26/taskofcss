@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task30</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            font:16px 'Microsoft YaHei','sans-serif';
+        }
+        .wrap{
+            width:600px;
+            text-align: center;
+            margin:100px auto;
+            overflow:hidden;
+        }
+        .name{
+
+            margin-right:20px;
+        }
+        .textbox{
+
+            width:300px;
+            height:30px;
+            border:1px solid #000;
+            border-radius:5px;
+        }
+        .tip {
+            visibility:hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <span class="name">名称</span><input type="text" class="textbox" value=""/>
+        <p  class="tip">必填，长度为4~16个字符</p>
+        <span class="name">密码</span><input type="text" class="textbox" value=""/>
+        <p class="tip">必填，长度为4~16个字符</p>
+        <span class="name">密码确认</span><input type="text" class="textbox" value=""/>
+        <p class="tip">必填，长度为4~16个字符</p>
+        <span class="name">邮箱</span><input type="text" class="textbox" value=""/>
+        <p class="tip">填写正确的邮箱格式</p>
+        <span class="name">手机</span><input type="text" class="textbox" value=""/>
+        <p class="tip">选填，填写正确的手机号码</p>
+        <input type="button" class="btn" value="提交"/>
+    </div>
+
+
+<script type="text/javascript" src="js/task30.js"></script>
+</body>
+</html>
