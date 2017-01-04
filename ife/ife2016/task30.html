@@ -10,17 +10,18 @@
             font:16px 'Microsoft YaHei','sans-serif';
         }
         .wrap{
-            width:600px;
+            width:430px;
             text-align: center;
             margin:100px auto;
             overflow:hidden;
         }
         .name{
-
+            display:inline-block;
+            width:100px;
+            text-align:right;
             margin-right:20px;
         }
         .textbox{
-
             width:300px;
             height:30px;
             border:1px solid #000;
@@ -28,25 +29,35 @@
         }
         .tip {
             visibility:hidden;
+            color:#000;
+        }
+        .btn{
+            width:100px;
+            height: 40px;
+            float:right;
+            background:#1d60ff;
+            color:#fff;
+            border:none;
+            border-radius:5px;
         }
     </style>
 </head>
 <body>
     <div class="wrap">
-        <span class="name">名称</span><input type="text" class="textbox" value=""/>
-        <p  class="tip">必填，长度为4~16个字符</p>
-        <span class="name">密码</span><input type="text" class="textbox" value=""/>
-        <p class="tip">必填，长度为4~16个字符</p>
-        <span class="name">密码确认</span><input type="text" class="textbox" value=""/>
-        <p class="tip">必填，长度为4~16个字符</p>
-        <span class="name">邮箱</span><input type="text" class="textbox" value=""/>
+        <span class="name">名称</span><input type="text" class="textbox" id="name" value=""/>
+        <p  class="tip" >必填，长度为4~16个字符</p>
+        <span class="name">密码</span><input type="password" class="textbox" id="password" value=""/>
+        <p class="tip" >必填，长度为4~16个字符</p>
+        <span class="name">密码确认</span><input type="password" class="textbox" id="comfirm" value=""/>
+        <p class="tip">再次输入相同的密码</p>
+        <span class="name">邮箱</span><input type="text" class="textbox" id="email" value=""/>
         <p class="tip">填写正确的邮箱格式</p>
-        <span class="name">手机</span><input type="text" class="textbox" value=""/>
+        <span class="name">手机</span><input type="text" class="textbox" id="tel" value=""/>
         <p class="tip">选填，填写正确的手机号码</p>
-        <input type="button" class="btn" value="提交"/>
+        <input type="submit" class="btn" id="submit" value="提交"/>
     </div>
 
-
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="js/task30.js"></script>
 </body>
 </html>
