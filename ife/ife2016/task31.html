@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task31</title>
+    <style>
+        *{
+            font:16px 'Microsoft YaHei','sans-serif';
+        }
+        form{
+            margin-top:100px;
+        }
+        .wrap{
+            width:800px;
+            height:60px;
+            overflow:hidden;
+            margin:0 auto;
+            text-align:center;
+            border:none;
+        }
+        label{
+            width:300px;
+            height:60px;
+           margin-left:30px;
+        }
+        .hidden{
+            display:none;
+            width:800px;
+            height:60px;
+            overflow:hidden;
+            margin:0 auto;
+            text-align:center;
+            border:none;
+        }
+        .show{
+            width:800px;
+            height:60px;
+            overflow:hidden;
+            margin:0 auto;
+            text-align:center;
+            border:none;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset  class="wrap">
+            <label class="selectType"><input type="radio" name="profession" value="school" checked="checked" />在校生</label>
+            <label class="selectType"><input type="radio" name="profession" value="company" />非在校生</label>
+        </fieldset>
+        <fieldset  class="show" id="school" >
+            <lable for="city">你的城市:
+                <select name="city" id="city" class="city">
+                    <option value="北京" >北京</option>
+                    <option value="上海">上海</option>
+                    <option value="武汉">武汉</option>
+                    <option value="广州">广州</option>
+                </select>
+            </lable>
+            <lable for="colloge" >你的学校：
+                <select name="colloge" id="colloge" >
+                    <option value="北京大学">北京大学</option>
+                    <option value="清华大学">清华大学</option>
+                    <option value="中国地质大学">中国地质大学</option>
+                    <option value="北京师范大学">北京师范大学</option>
+                </select>
+            </lable>
+        </fieldset>
+        <fieldset class="hidden" id="company">
+            <label for="company">就业单位：
+                <input type="text" value="" class="companyName" name="company" >
+            </label>
+        </fieldset>
+        <script src="js/task31.js"></script>
+    </form>
+
+</body>
+</html>
