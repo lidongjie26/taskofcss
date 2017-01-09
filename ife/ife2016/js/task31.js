@@ -14,6 +14,7 @@ var schoolArr={
 * 3、select选择功能
 * 4、初始化功能
 * */
+//浏览器兼容性事件绑定函数
 var EventUtil={
     addHandle:function(element,type,handle){
         if(element.addEventListener){
@@ -34,6 +35,7 @@ var message={
 };
 var school=document.getElementById("school");
 var company=document.getElementById("company");
+//单选按钮函数
 function radioChange(){
     var radios=document.getElementsByName('profession');
     var radioLength=radios.length;
@@ -45,6 +47,7 @@ function radioChange(){
         }
     }
 }
+//城市学校选择函数
 function selectionChange(){
     if(message.type=='school'){
         school.className='show';
@@ -65,6 +68,7 @@ function cityChange(element){
     }
 }
 var form=document.forms[0];
+//事件绑定函数
 EventUtil.addHandle(form,'click',function(e){
     var target=EventUtil.getTarget(e);
     switch(target.className){
